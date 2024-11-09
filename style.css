@@ -1,0 +1,222 @@
+/* Basic styling for the app */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    text-align: center;
+    background-image: url('https://watermark.lovepik.com/photo/40054/0710.jpg_wh1200.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    color: #f4f4f9;
+}
+.my_btn{
+    cursor: pointer;
+}
+.screen {
+    display: none;
+}
+
+#welcome-screen {
+    display: block;
+    margin-top: -1rem;
+}
+#category-buttons {
+    width: 100%;
+    display: flex;
+ 
+    flex-direction: column; 
+    align-items: center;
+}
+
+#category-buttons button {
+    padding: 10px 20px;
+    font-size:1.4rem;
+    margin: 10px;
+    cursor: pointer;
+    display: block; 
+    width: 100%;   
+    max-width:250px;
+    border-radius:8px;
+    background-color:#1d1e22;
+    color: #f4f4f9;
+}
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+#number-buttons button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1, h2 {
+    font-size: 24px;
+}
+
+h1{
+    font-size:2.9rem;
+    color: #1d1e22;
+}
+p{
+    font-size: 1.8rem;
+    color: ghostwhite;
+    font-weight: 800;
+}
+
+#quiz-screen{
+    margin-top:1rem;
+}
+#question{
+    font-size:7rem;
+    margin-bottom:1rem;
+}
+#quiz-screen input{
+    padding: 0.9rem;
+    width:20rem;
+    border-radius:3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+#quiz-screen button{
+    padding:2;
+    width:4rem;
+    font-size:2rem;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 3rem;
+}
+#quiz-screen .my_btn{
+    width: 13rem;
+    margin: 2rem;
+    margin-top: 0;
+    padding: 0.4rem;
+}
+
+#result-screen{
+    margin-top:-2.4rem;
+    background-color: #1d1e22;
+    
+    width:30rem;
+    margin-left:25rem;
+    border-radius: 10px;
+}
+#result-screen h2{
+    font-size: 3rem;
+}
+#result-screen p{
+    font-size:1.7rem;
+    font-weight: 500;
+}
+
+#result-screen #results-list li{
+    font-size:1.4rem;
+}
+#back-btn{
+    width: 10rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding:0.3rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+} 
+
+
+#start-screen {
+    /* display: flex; */
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 150vh;
+    margin-left: 45vh;
+    padding-top: 5px;
+    margin-top: 20vh;
+    border-radius: 10px;
+    background-color: rgba(29, 30, 34, 0.8);
+}
+
+#start-btn {
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #1d1e22;
+    color: #f4f4f9;
+    border: none;
+}
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #start-screen, #welcome-screen, #quiz-screen, #result-screen {
+        width: 90%;
+        padding: 15px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    #start-btn, #category-buttons button, #quiz-screen button.my_btn, #back-btn {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    #number-buttons button {
+        width: 30px;
+        font-size: 0.8rem;
+    }
+
+    #quiz-screen input[type="text"] {
+        width: 90%;
+    }
+
+    #result-screen p, #result-screen li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    #start-btn, #category-buttons button, #quiz-screen button.my_btn, #back-btn {
+        width: 90%;
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    #number-buttons button {
+        width: 25px;
+        font-size: 0.7rem;
+    }
+
+    #quiz-screen input[type="text"] {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+

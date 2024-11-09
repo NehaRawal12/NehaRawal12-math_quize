@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="start-screen" class="screen">
+        <h1>Welcome to the Math Quiz</h1>
+        <p>Test your math skills in various categories!</p>
+        <button id="start-btn">Start</button>
+    </div>
+
+    
+    <div id="welcome-screen" class="screen" style="display:none;">
+        <h1>Math Quiz</h1>
+        <p>Select a category to start the quiz</p>
+        <div id="category-buttons"></div>
+    </div>
+
+ 
+    <div id="quiz-screen" class="screen" style="display:none;">
+        <h2 id="question"></h2>
+        <input type="text" id="answer-input" placeholder="Enter your answer">
+        <div id="number-buttons">
+           
+        </div>
+        <button id="submit-btn" class="my_btn">Submit</button>
+        <button id="undo-btn" class="my_btn">Undo</button></div>
+        
+
+    <div id="result-screen" class="screen" style="display:none;">
+        <h2>Your Results</h2>
+        <ul id="results-list"></ul>
+        <p>Your score: <span id="score"></span></p>
+        <button id="back-btn">Back</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
+
+
