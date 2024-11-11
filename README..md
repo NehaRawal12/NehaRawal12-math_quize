@@ -52,6 +52,3 @@ The Math Quiz app is fully responsive, ensuring a seamless experience across var
 1. **Open the `index.html` file** in your preferred web browser.
 2. **Click "Start"** on the welcome page to begin the quiz.
 
----
-
-Enjoy testing and improving your math skills with the Math Quiz Web Application!
